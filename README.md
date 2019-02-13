@@ -1,12 +1,15 @@
+## `TRUE`  = Recording  */*  `FALSE` = Not recording
+
+### 1 JS
+
 ### App.js
 
-## 1
-```
+```javascript
 import { NativeModules } from 'react-native';
 const ScreenRecorderGang = NativeModules.ScreenRecorderGang;
 ```
 
-```
+```javascript
 checkIfRecord() {
     try {
       ScreenRecorderGang.get().then(isScreen => { this.setState({ screenStatu: isScreen}) });
@@ -16,8 +19,8 @@ checkIfRecord() {
 }
 ```
 
-#### TRUE = Recording
-#### FALSE = Not recording
+### 2 iOS
 
-## 2
-##### Import ScreenRecorder.h && ScreenRecorder.m in ios/
+```
+Import ScreenRecorder.h && ScreenRecorder.m in ios/ or just create them with Xcode and copy / paste
+```
