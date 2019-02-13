@@ -1,4 +1,4 @@
-## `TRUE`  = Recording  */*  `FALSE` = Not recording
+## `YES`  = Recording  */*  `NO` = Not recording
 
 ### 1 JS
 
