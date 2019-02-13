@@ -15,5 +15,8 @@ checkIfRecord() {
     }
 }
 ```
+# TRUE = Recording
+# FALSE = Not recording
+
 ## 2
-##### Import ScreenRecorder.h && ScreenRecorder.m
+##### Import ScreenRecorder.h && ScreenRecorder.m in ios/
