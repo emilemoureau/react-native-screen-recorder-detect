@@ -1,13 +1,11 @@
 //
 //  ScreenRecorder.h
-//  Test
+//  ScreenRecorder
 //
-//  Created by lol on 12/02/2019.
-//  Copyright © 2019 Facebook. All rights reserved.
+//  Created by emilemoureau on 12/02/2019.
 //
 //  ScreenRecordingDetector -> Created by Abhilash on 29/12/17.
 //  Twitter: @abhilashkm1992
-//  Copyright © 2017 Abhilash. All rights reserved.
 //
 
 #import "React/RCTBridgeModule.h"
