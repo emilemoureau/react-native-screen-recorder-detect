@@ -1,3 +1,5 @@
+#### Detect screen capture / record / mirrored - iOS 11 < *
+
 ## `YES`  = Recording  */*  `NO` = Not recording
 
 ### 1 JS
