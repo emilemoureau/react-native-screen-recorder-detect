@@ -8,13 +8,13 @@
 
 ```javascript
 import { NativeModules } from 'react-native';
-const ScreenRecorderGang = NativeModules.ScreenRecorderGang;
+const ScreenRecorderDetect = NativeModules.ScreenRecorderDetect;
 ```
 
 ```javascript
 checkIfRecord() {
     try {
-      ScreenRecorderGang.get().then(isScreen => { this.setState({ screenStatu: isScreen}) });
+      ScreenRecorderDetect.get().then(isRecord => { this.setState({ screen: isRecord}) });
     } catch (e) {
       console.error(e);
     }
