@@ -86,7 +86,7 @@ NSString *kScreenRecordingDetectorRecordingStatusChangedNotification = @"kScreen
 }
 @end
 
-@implementation ScreenRecorderGang
+@implementation ScreenRecorderDetect
 
 RCT_EXPORT_MODULE();
 // We can send back a promise to our JavaScript environment :)

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, View, Alert, TouchableOpacity} from 'react-native';
 import { NativeModules } from 'react-native';
-const ScreenRecorderGang = NativeModules.ScreenRecorderGang;
+const ScreenRecorderDetect = NativeModules.ScreenRecorderDetect;
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -13,12 +13,12 @@ const instructions = Platform.select({
 export default class App extends Component {
 
   state = {
-    screenStatu: '0'
+    screen: '0'
   }
 
   checkIfRecord() {
     try {
-      ScreenRecorderGang.get().then(isScreen => { this.setState({ screenStatu: isScreen}) });
+      ScreenRecorderDetect.get().then(isRecord => { this.setState({ screen: isRecord}) });
     } catch (e) {
       console.error(e);
     }
@@ -27,11 +27,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{ fontSize: 25, fontWeight: '800'}}>{this.state.screenStatu}</Text>
+        <Text style={{ fontSize: 25, fontWeight: '800'}}>{this.state.screen}</Text>
         <TouchableOpacity
           onPress={() => this.checkIfRecord()}
         >
-          <Text>TEST</Text>
+          <Text>Check</Text>
         </TouchableOpacity>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>

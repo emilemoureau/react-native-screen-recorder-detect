@@ -24,5 +24,5 @@ extern NSString *kScreenRecordingDetectorRecordingStatusChangedNotification;
 
 @end
 
-@interface ScreenRecorderGang : NSObject <RCTBridgeModule>
+@interface ScreenRecorderDetect : NSObject <RCTBridgeModule>
 @end
